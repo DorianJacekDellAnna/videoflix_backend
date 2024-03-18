@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-x(x*=4_#zhfc&&ic5#w!9!*)-qw9#u@q0$dw-u)a#zlbteiqu8
 DEBUG = True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:4200', 'https://dellannavideoflix.pythonanywhere.com', 'https://testen.dellannadev.com/'
+    'http://localhost:4200', 
+    'https://dellannavideoflix.pythonanywhere.com', 
+    'https://testen.dellannadev.com' 
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -39,8 +41,6 @@ CSRF_COOKIE_NAME = "csrftoken"
 CSRF_COOKIE_HTTPONLY = False
 
 CORS_ALLOW_CREDENTIALS = True
-
-
 
 
 CORS_ALLOW_HEADERS = [
@@ -89,7 +89,7 @@ INSTALLED_APPS = [
     'authentication',
     'rest_framework.authtoken',
     'content.apps.ContentConfig',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -148,7 +148,6 @@ DATABASES = {
         'NAME':  BASE_DIR / "db.sqlite3",
     }
 }
-
 
 
 # Password validation
@@ -211,4 +210,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'dorian.d.a@web.de'
 EMAIL_HOST_PASSWORD = 'ljyq jcvv edwx atub'
-
