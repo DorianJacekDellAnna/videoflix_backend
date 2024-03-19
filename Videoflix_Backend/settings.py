@@ -184,7 +184,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -204,9 +205,9 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'dorian.d.a@web.de'
-EMAIL_HOST_PASSWORD = 'ljyq jcvv edwx atub'
+##EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+##EMAIL_HOST = 'smtp.gmail.com'
+##EMAIL_PORT = 587
+##EMAIL_USE_TLS = True
+##EMAIL_HOST_USER = 'dorian.d.a@web.de'
+##EMAIL_HOST_PASSWORD = 'ljyq jcvv edwx atub'
